@@ -1,10 +1,27 @@
-body {
+.counter_sec {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 
 
-h3{
-  font-size: 60px;
-} 
+.counter_num {
+  font-size: 40px;
+  margin: 0;
+}
+
+.counter_wait {
+  font-size: 22px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+
+#download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}

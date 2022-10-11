@@ -5,11 +5,28 @@ hide.style.display = "none"
 
 // create Timer Element.
 
+let div = document.createElement("div")
+div.className = "counter_sec"
+hide.appendChild(div)
+hide.before(div)
+
+
 let counter = document.createElement("h3")
 counter.className = "counter_num"
 counter.innerText = "10"
-hide.appendChild(counter)
-hide.before(counter)
+div.appendChild(counter)
+
+let wait = document.createElement("h3")
+wait.className="counter_wait"
+wait.innerText = "Please Wait...."
+div.appendChild(wait)
+
+
+
+
+
+
+
 
 let change = Number(counter.innerText)
 
@@ -38,6 +55,8 @@ let stop = setTimeout(() => {
 
   if (change == -1) {
     counter.style.display = "none"
+    wait.remove()
     hide.style.display = ""
+    
   }
 }, 11000)
